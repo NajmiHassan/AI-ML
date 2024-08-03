@@ -3,7 +3,7 @@ from openai import OpenAI
 
 # Initialize client with your own API key and endpoint if different from default OpenAI settings
 client = OpenAI(
-    api_key="e677189f43f0498abbd2b5f4a4b7a596",
+    api_key="ai_ml_api",
     base_url="https://api.aimlapi.com"
 )
 
