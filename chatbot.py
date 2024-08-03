@@ -1,9 +1,17 @@
 import streamlit as st
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API key from environment variable
+api_key = os.getenv("ai_ml_api")
 
 # Initialize client with your own API key and endpoint if different from default OpenAI settings
 client = OpenAI(
-    api_key="ai_ml_api",
+    api_key=api_key,
     base_url="https://api.aimlapi.com"
 )
 
